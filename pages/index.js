@@ -4,6 +4,13 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
+const addtodo= () => { 
+
+
+ };
+
+
   return (
     <div className="my-3 text-3xl">
     
@@ -20,7 +27,7 @@ export default function Home() {
         <label for="email" class="leading-7 text-sm text-gray-600">To Do text</label>
         <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
       </div>
-      <button class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 w-1/11  mx-auto rounded text-lg">Add To Do</button>
+      <button onClick={addtodo} class="text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 w-1/11  mx-auto rounded text-lg">Add To Do</button>
      
     </div>
   </div>
