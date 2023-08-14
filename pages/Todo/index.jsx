@@ -37,7 +37,7 @@ const index = () => {
 
 
 
-       { todos.map(item=>{
+       { todos?.map(item=>{
 return( <div class="p-4 lg:w-1/4 md:w-1/2">
 <div class="h-full flex flex-col items-center text-center">
   <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src={`https://picsum.photos/600/900?a=${item.title}`}/>
